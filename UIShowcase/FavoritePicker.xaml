@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UIShowcase.FavoritePicker">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Enter Your Favorite Band"
+                   x:Name="FavString"/>
+            <Label Text="RGB Picker"
+                   HorizontalTextAlignment="Center"/>
+            <Slider x:Name="RedPicker"
+                    ValueChanged="ColorPicker_ValueChanged"
+                    Minimum="0"
+                    Value="0"
+                    Maximum="255"/>
+            <Slider x:Name="GreenPicker"
+                    ValueChanged="ColorPicker_ValueChanged"
+                    Minimum="0"
+                    Value="0"
+                    Maximum="255"/>
+            <Slider x:Name="BluePicker"
+                    ValueChanged="ColorPicker_ValueChanged"
+                    Minimum="0"
+                    Value="0"
+                    Maximum="255"/>
+            <ProgressBar x:Name="ColorViewer"
+                         ProgressColor="White"
+                         Progress="1"
+                         HeightRequest="20"/>
+            <Switch x:Name="FavBool"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
